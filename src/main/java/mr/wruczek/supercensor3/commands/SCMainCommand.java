@@ -50,7 +50,7 @@ public class SCMainCommand implements CommandExecutor, TabCompleter {
         return subcommands;
     }
 
-    public static ArrayList<SCSubcommand> getTabComplete() {
+    public static List<SCSubcommand> getTabComplete() {
         return tabComplete;
     }
 

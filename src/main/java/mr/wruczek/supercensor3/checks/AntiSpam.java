@@ -151,12 +151,9 @@ public class AntiSpam implements Listener {
         if (removeWarnEvery == 0)
             return -1;
 
-        return Bukkit.getScheduler().scheduleSyncRepeatingTask(SCMain.getInstance(), new Runnable() {
-            @Override
-            public void run() {
-                for (AntiSpamData data : AntiSpam.getData()) {
-                    data.removeWarn();
-                }
+        return Bukkit.getScheduler().scheduleSyncRepeatingTask(SCMain.getInstance(), () -> {
+            for (AntiSpamData data : AntiSpam.getData()) {
+                data.removeWarn();
             }
         }, 20L * removeWarnEvery, 20L * removeWarnEvery);
     }

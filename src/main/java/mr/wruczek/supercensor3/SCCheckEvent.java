@@ -20,6 +20,7 @@ public final class SCCheckEvent extends Event {
     private boolean censored;
 
     public SCCheckEvent(Player player, String message) {
+        super(true);
         this.player = player;
         this.message = message;
         this.originalMessage = message;
