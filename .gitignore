@@ -169,4 +169,6 @@ fabric.properties
 
 todo.txt
 junk/
-messages/header.txt
+src/main/resources/messages/header.txt
+target
+.idea
