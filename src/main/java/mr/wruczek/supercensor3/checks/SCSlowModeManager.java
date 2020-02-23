@@ -19,7 +19,7 @@ public class SCSlowModeManager {
 
     public static SCSlowModeManager getManager = new SCSlowModeManager();
 
-    private Map<String, Long> map = new HashMap<String, Long>();
+    private Map<String, Long> map = new HashMap<>();
 
     public boolean isEnabled() {
         if (!SCConfigManager2.isInitialized())

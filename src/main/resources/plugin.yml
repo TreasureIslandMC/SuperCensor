@@ -1,7 +1,9 @@
 name: SuperCensor
-version: 3.3.1
+version: ${project.version}
 main: mr.wruczek.supercensor3.SCMain
 author: Wruczek
+authors:
+  - TreasureIslandMC
 commands:
   supercensor:
     aliases: ['sc']

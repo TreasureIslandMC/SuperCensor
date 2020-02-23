@@ -69,12 +69,6 @@ public class SCMain extends JavaPlugin {
         });
         // endregion
 
-        try {
-            // scPlayersDataManger = new SCPlayersDataManger(false, null, null, null, null, null);
-        } catch (Exception e) {
-            LoggerUtils.handleException(e);
-        }
-
         long loadTime = System.currentTimeMillis() - timerStart;
 
         SCLogger.logInfo(ConfigUtils.getMessageFromMessagesFile("SystemEnable.Loaded")
@@ -88,12 +82,6 @@ public class SCMain extends JavaPlugin {
 
         SCSelfMuteManager.save();
         SCConfigManager2.data.save();
-        try {
-            // scPlayersDataManger.saveData();
-        } catch (Exception e) {
-            LoggerUtils.handleException(e);
-        }
-        // SCConfigManager.save();
     }
 
     public static SCMain getInstance() {
